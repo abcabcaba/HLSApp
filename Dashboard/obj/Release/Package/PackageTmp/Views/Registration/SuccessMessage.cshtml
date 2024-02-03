@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "SuccessMessage";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+<form action="~/Login/Login" class="inline">
+    <br /><br /><br /><br />
+    <div class="row">
+        <div class="col-xl-3 col-lg-7">
+        </div>
+        <div class="col-xl-6 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary" style="color: #27ae60 !important; ">
+                        Thank you for filling out your information!. Your Request No is : <b>@Request.QueryString["q"].ToString()</b>
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div style="text-align:center">
+                        <br />
+                        <input type="submit" id="btnSave" class="btn-success" value="Login" style="width: 100px;height:30px; border-radius: 8px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+

@@ -1,0 +1,48 @@
+﻿@model BAL.Model.UserVerificationModel
+@{
+    ViewBag.Title = "Verification";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="row">
+    <div class="col-xl-3 col-lg-7">
+    </div>
+    <div class="col-xl-6 col-lg-7">
+        <div class="card shadow mb-4">
+            <div class="card-header text-center">
+                <h6 class="m-0 font-weight-bold text-center">
+                    <h4>OTP Verification</h4>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div>
+                    <div class="row">
+                        <div class="col-md-4 mb-6 text-right">
+                            Enter OTP :
+                        </div>
+                        <div class="col-md-8 mb-6 text-left">
+                            @using (Html.BeginForm("VerifyOTP", "Registration", FormMethod.Post, new { enctype = "multipart/form-data", id = "userReg" }))
+                            {
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.OTP, new { @class = "otp-digit", maxlength = 6, style = "width:250px;" })<br />
+                                    @Html.ValidationMessageFor(m => m.OTP, "", new { @class = "text-danger" })
+                                    @if (!string.IsNullOrEmpty(Model.errorMassage))
+                                    {
+                                        <span style="color:red;margin-top:3px;">@Model.errorMassage</span>
+                                    }
+                                </div>
+                                <input type="submit" id="btnSave" class="btn-success" value="Verify" style="width: 100px;height:30px; border-radius: 8px;" />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function focusNextTextbox(currentTextbox) {
+            var currentIndex = Array.from(currentTextbox.parentElement.parentElement.children).indexOf(currentTextbox.parentElement);
+            var nextIndex = (currentIndex + 1) % 6;
+            var nextTextbox = currentTextbox.parentElement.parentElement.children[nextIndex].querySelector('.otp-digit');
+            nextTextbox.focus();
+        }
+    </script>

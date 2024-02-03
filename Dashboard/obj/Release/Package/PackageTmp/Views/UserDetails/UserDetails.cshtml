@@ -1,0 +1,435 @@
+﻿@model BAL.Model.UserDetailsViewModel
+@{
+    ViewBag.Title = "UserDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="@Url.Content("~/PlugIn/vendor/fontawesome-free/css/all.min.css")" rel="stylesheet" type="text/css">
+@*<script src="@Url.Content("~/PlugIn/js/sb-admin-2.min.js")"></script>*@
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.min.js")"></script>
+<script src="@Url.Content("~/PlugIn/vendor/bootstrap/js/bootstrap.bundle.min.js")"></script>
+<script src="@Url.Content("~/PlugIn/vendor/jquery-easing/jquery.easing.min.js")"></script>
+
+<script src="@Url.Content("~/PlugIn/vendor/chart.js/Chart.min.js")"></script>
+<script src="@Url.Content("~/PlugIn/js/demo/chart-area-demo.js")"></script>
+<script src="@Url.Content("~/PlugIn/js/demo/chart-pie-demo.js")"></script>
+<script src="@Url.Content("~/PlugIn/js/demo/chart-bar-demo.js")"></script>
+
+<div class="row">
+    <div class="col-xl-12 col-md-12 mb-5">
+        <div class="col-xl-12 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary" style="color: #27ae60 !important; ">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'Tab1')">Besic Details</button>
+                            <button class="tablinks" onclick="openTab(event, 'Tab2')">Personal Information</button>
+                            <button class="tablinks" onclick="openTab(event, 'Tab3')">Sport and Education Details</button>
+                        </div>
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div style="text-align:center">
+                        @using (Html.BeginForm("Registration", "Registration", FormMethod.Post))
+                        {
+                            <div id="Tab1" class="tabcontent active" style="height:460px!important">
+                                <h4>Besic Details</h4>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Employee Code :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.EMPLOYEE_CODE, new { @id = "txtEMPLOYEE_CODE", style = "width:150px;", @readonly = "true" })<label id="lblStatus"></label>
+                                        @Html.ValidationMessageFor(m => m.EMPLOYEE_CODE, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Full Name :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.FULL_NAME, new { @id = "txtFULL_NAME", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.FULL_NAME, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Father Name :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.FATHER_NAME, new { @id = "txtFATHER_NAME", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.FATHER_NAME, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Aadhaar Number :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.ADHAAR_NUMBER, new { @id = "txtADHAAR_NUMBER", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.ADHAAR_NUMBER, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Gender :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.GENDER_CD, ViewBag.GENDER_CD as SelectList, "Select Gender", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.GENDER_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Date of Birth :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.DOB, "{0:dd-MM-yyyy}", new { @id = "txtDOB", @class = "datepicker", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.DOB, "", new { @class = "text-danger" })
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Age :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.AGE, new { @id = "txtAGE", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.AGE, "", new { @class = "text-danger" })
+                                    </div>
+
+                                </div>
+                                      <div class="row">
+                                          <div class="col-md-2 mb-2">
+                                              Image :
+                                          </div>
+                                          <div class="col-md-2 mb-2">
+                                              @if (Model.ImageString != null)
+                                              {
+                                                  <img src="@Model.ImageString" width="150px" height="150px" alt="Image" />
+                                              }
+                                          </div>
+                                      </div>
+                            </div>
+                            <div id="Tab2" class="tabcontent" style="height:460px!important">
+                                <h4>Personal Information</h4>
+                                <br />
+
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Email:
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.EMAIL, new { @id = "txtEMAIL", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.EMAIL, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Date of Joining :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.DOJ, "{0:dd-MM-yyyy}", new { @id = "txtDOJ", @class = "datepicker", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.DOJ, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Height(in cm.) :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.HEIGHT, new { @id = "txtHEIGHT", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.HEIGHT, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-2 mb-2">
+                                        Weight(in kg.) :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.WEIGHT, new { @id = "txtWEIGHT", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.WEIGHT, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Mairtal Status :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.MARITAL_STATUS_CD, ViewBag.MARITAL_STATUS_CD as SelectList, "Select Marital Status", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.MARITAL_STATUS_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Blood Group :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.BLOOD_GROUP_CD, ViewBag.BLOOD_GROUP_CD as SelectList, "Select Blood Group", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.BLOOD_GROUP_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-2 mb-2">
+                                        Batch No. :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.BATCH_NUMBER, new { @id = "txtBATCH_NUMBER", style = "width:150px;", @readonly = "true" })
+                                        @Html.ValidationMessageFor(m => m.BATCH_NUMBER, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Rank :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.RANK_CD, ViewBag.RANK_CD as SelectList, "Select Rank", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.RANK_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Sport Level :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.SPORT_LEVEL_CD, ViewBag.SPORT_LEVEL_CD as SelectList, "Select Sport Level", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.SPORT_LEVEL_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <br /><div>
+                                    <div>
+                                        <h4>Address Information</h4>
+                                        <br />
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 mb-2">
+                                            Country :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.DropDownListFor(model => model.COUNTRY_CD, ViewBag.COUNTRY_CD as SelectList, "Select Country", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            State :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.DropDownListFor(model => model.STATE_CD, ViewBag.STATE_CD as SelectList, "Select State", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                            @Html.ValidationMessageFor(model => model.STATE_CD, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            District :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.DropDownListFor(model => model.DISTRICT_CD, new SelectList(""), "Select District", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                            @Html.ValidationMessageFor(model => model.DISTRICT_CD, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 mb-2">
+                                            Pincode :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.PINCODE, new { @id = "txtPINCODE", style = "width:150px;", @readonly = "true" })
+                                            @Html.ValidationMessageFor(m => m.PINCODE, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            Post Office :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.POST_OFFICE, new { @id = "txtPOST_OFFICE", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            Village/Town/City :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.VILLAGE, new { @id = "txtVILLAGE", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 mb-2">
+                                            Sub-District :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.SUB_DISTRICT, new { @id = "txtSUB_DISTRICT_CD", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            Street :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.STREET, new { @id = "txtSTREET", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            House :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.HOUSE, new { @id = "txtHOUSE", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 mb-2">
+                                            Landmarks :
+                                        </div>
+                                        <div class="col-md-2 mb-2">
+                                            @Html.TextBoxFor(m => m.LANDMARK, new { @id = "txtLANDMARK", style = "width:150px;", @readonly = "true" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Tab3" class="tabcontent" style="height:460px!important">
+
+                                <h4>Sport and Education Details</h4>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Select Sport :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.SPORT_CD, ViewBag.SPORT_CD as SelectList, "Select Sport Details", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.SPORT_CD, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Extra Sport :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.TextBoxFor(m => m.EXTRA_SPORT, new { @id = "txtEXTRA_SPORT", style = "width:150px;", @readonly = "true" })
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        T-shirt Size :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.T_SHIRT_SIZE, ViewBag.T_SHIRT_SIZE as SelectList, "Select T-Shirt Size", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.T_SHIRT_SIZE, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 mb-2">
+                                        Trousers Size :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.TROUSERS_SIZE, ViewBag.TROUSERS_SIZE as SelectList, "Select Trousers Size", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.TROUSERS_SIZE, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Shoe Size :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.SHOE_SIZE, ViewBag.SHOE_SIZE as SelectList, "Select Shoe Size", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.SHOE_SIZE, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        Education :
+                                    </div>
+                                    <div class="col-md-2 mb-2">
+                                        @Html.DropDownListFor(model => model.EDUCATION_CD, ViewBag.EDUCATION_CD as SelectList, "Select Education", new { @class = "input100", @style = "width:150px; border-color:black;", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.EDUCATION_CD, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <input type="hidden" id="hdfDISTRICT_CD" name="hdnDISTRICT_CD" value="@Model.DISTRICT_CD">
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .tab {
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+    .tabactivedata {
+        background-color: #ddd;
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+</style>
+<script>
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent[0].style.display = "block";
+    function openTab(event, tabName) {
+        for (var i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $("#STATE_CD").change(function () {
+        var State_CD = $(this).val();
+
+        $.ajax({
+            type: "post",
+            url: "/Registration/GetDistrictList?State_CD=" + State_CD,
+            contentType: "html",
+            success: function (response) {
+                $("#DISTRICT_CD").empty();
+                $("#DISTRICT_CD").append(response);
+            }
+        })
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#txtEMPLOYEE_CODE').on('change', function () {
+            $.ajax({
+                type: "POST",
+                url:'@Url.Action("CheckUserAvailability", "Registration", new { area = "Admin" })',//  this for calling the web method function in controller.
+                data: '{UserName: "' + $("#txtEMPLOYEE_CODE").val()+ '" }',// user name value
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: OnSuccess,
+                failure: function (response) {
+                    alert(response);
+                }
+            });
+        });
+    });
+    function OnSuccess(response) {
+        var msg = $("#lblStatus");
+        debugger;
+        switch (response) {
+            case "true":
+                msg.show();
+                msg.css("color","red");
+                msg.html("Employee already exists.");
+                break;
+            case "false":
+                msg.show();
+                msg.css("color","green");
+                msg.html("Employee Available");
+                break;
+        }
+    }
+    $(document).ready(function () {
+        var STATE = document.getElementById('STATE_CD');
+        var State_CD = STATE.value;
+        if (State_CD !== '' && parseFloat(State_CD) > 0) {
+            $.ajax({
+                type: "post",
+                url: "/Registration/GetDistrictList?State_CD=" + State_CD,
+                contentType: "html",
+                success: function (response) {
+                    $("#DISTRICT_CD").empty();
+                    $("#DISTRICT_CD").append(response);
+                    var desiredDistrictValue = document.getElementById('hdfDISTRICT_CD').value;
+                    if (desiredDistrictValue !== '' && parseFloat(desiredDistrictValue) > 0) {
+                        $("#DISTRICT_CD").val(desiredDistrictValue);
+                    }
+                }
+            })
+        }
+    });
+</script>
+
+

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="connstr-Web.config Connection String" description="connstr Connection String used in web.config by the application to access the database." defaultValue="Data Source=J-PC;Initial Catalog=state_sport_db;uid=sa;pwd=india@123;pooling=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\WorkingArea\\SportsWeb\\UKSportApp\\Dashboard\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='connstr']/@connectionString" />
+  </parameter>
+</parameters>

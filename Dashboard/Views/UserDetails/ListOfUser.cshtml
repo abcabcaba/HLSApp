@@ -1,0 +1,64 @@
+﻿@model List<BAL.Model.UserDetailsViewModel>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "SuccessMessage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.min.js")"></script>
+<script src="@Url.Content("~/Scripts/gridmvc.min.js")"></script>
+<link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<div class="row">
+    <div class="col-xl-12 col-lg-7">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h2>User Details</h2>
+            </div>
+            <div class="card-body">
+                <div style="text-align:center">
+                    <div class="container text-center"" style="width:100%">
+                        @Html.Grid(Model).Columns(columns =>
+                        {
+                                columns.Add(c => c.EMPLOYEE_CODE)
+                                .Titled("Employee Code")
+                                .Filterable(true)
+                                .Encoded(false)
+                                .Sanitized(false)
+                                .SetWidth(30)
+                                .RenderValueAs(c => Html.Raw($"<a href='/UserDetails/UserDetails/{c.PERSON_CODE}'>{c.EMPLOYEE_CODE}</a>"));
+                                 columns.Add(c => c.FULL_NAME)
+                                .Titled("Full Name")
+                                .Filterable(true);
+                                columns.Add(c => c.FATHER_NAME)
+                                .Titled("Father Name")
+                                .Filterable(true);
+                                columns.Add(c => c.GENDER_CD)
+                                .Titled("Gender")
+                                .Filterable(true);
+                                columns.Add(c => c.ADHAAR_NUMBER)
+                                .Titled("Aadhaar Number")
+                                .Filterable(true);
+                                columns.Add(c => c.EMAIL)
+                                .Titled("eMail")
+                                .Filterable(true);
+                                columns.Add(c => c.AGE)
+                                .Titled("Age")
+                                .Filterable(true);
+                                columns.Add(c => c.HEIGHT)
+                                .Titled("Height")
+                                .Filterable(true);
+                                columns.Add(c => c.WEIGHT)
+                                .Titled("Weight")
+                                .Filterable(true);
+                        }).WithPaging(10).Sortable(true)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿<li class="nav-item">
+    @if (Session["USER_TYPE"] != null && Session["USER_TYPE"].Equals("1"))
+    {
+        <a class="nav-link" href="~/Home/DashBoard" style="color: black !important; font-weight: bold; font-size: 14px; ">
+            <i class="fas fa-fw fa-folder"></i>
+            <span style="color: yellow !important; font-size: 16px !important;">Home</span>
+        </a>
+    }
+<a class="nav-link" href="~/UserDetails/ListOfUser" style="color: black !important; font-weight: bold; font-size: 14px; ">
+    <i class="fas fa-fw fa-folder"></i>
+    <span style="color: yellow !important; font-size: 16px !important;">User Details</span>
+    <br>
+    <i class="fas fa-fw fa-folder"></i>
+    <span style="color: yellow !important; font-size: 16px !important;">Enter Daily Activity</span>
+    <br>
+    <i class="fas fa-fw fa-folder"></i>
+    <span style="color: yellow !important; font-size: 16px !important;">View Daily Activity</span>
+</a>
+
+</li>

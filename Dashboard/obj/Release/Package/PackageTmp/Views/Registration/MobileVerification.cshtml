@@ -1,0 +1,40 @@
+﻿@model BAL.Model.UserModel
+@using BAL.Helper;
+@{
+    ViewBag.Title = "Verification";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+    <div class="row">
+        <div class="col-xl-3 col-lg-7">
+        </div>
+        <div class="col-xl-6 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header text-center">
+                    <h6 class="m-0 font-weight-bold text-center">
+                        <h4>Verification</h4>
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-4 mb-6 text-right">
+                                Mobile :
+                            </div>
+                            <div class="col-md-8 mb-6 text-left">
+                                @using (Html.BeginForm("MobileVerification", "Registration", FormMethod.Post, new { enctype = "multipart/form-data", id = "userReg" }))
+                                {
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m => m.MobileNumber, new { @id = "txtMobileNumber", style = "width:150px;" })<br />
+                                        @Html.ValidationMessageFor(m => m.MobileNumber, "", new { @class = "text-danger" })
+                                    </div>
+                                    <input type="submit" id="btnSave" class="btn-success" value="Submit" style="width: 100px;height:30px; border-radius: 8px;" />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

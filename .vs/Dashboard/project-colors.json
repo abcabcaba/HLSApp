@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48bda6f1-7841-4f29-81d3-e87de3ad0a2f": {
+      "ProjectGuid": "48bda6f1-7841-4f29-81d3-e87de3ad0a2f",
+      "DisplayName": "Dashboard",
+      "ColorIndex": 0
+    },
+    "dd1f95fa-8e96-4246-a227-62358089b444": {
+      "ProjectGuid": "dd1f95fa-8e96-4246-a227-62358089b444",
+      "DisplayName": "BAL",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

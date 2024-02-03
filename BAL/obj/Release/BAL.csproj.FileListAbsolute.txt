@@ -1,0 +1,135 @@
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\BAL.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\BAL.pdb
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\DAL.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\DAL.pdb
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CopyComplete
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\obj\Release\BAL.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\BAL\obj\Release\BAL.pdb
+D:\ACR\UKSPARROW\BAL\bin\Release\BAL.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\BAL.pdb
+D:\ACR\UKSPARROW\BAL\bin\Release\DAL.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.dll
+D:\ACR\UKSPARROW\BAL\bin\Release\DAL.pdb
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.xml
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.xml
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.xml
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.xml
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+D:\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.xml
+D:\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+D:\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+D:\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CopyComplete
+D:\ACR\UKSPARROW\BAL\obj\Release\BAL.dll
+D:\ACR\UKSPARROW\BAL\obj\Release\BAL.pdb
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\BAL.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\BAL.pdb
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\DAL.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.dll
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\DAL.pdb
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Helpers.xml
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Mvc.xml
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.Razor.xml
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.xml
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Application\ACR\UKSPARROW\BAL\bin\Release\System.Web.WebPages.Razor.xml
+D:\Application\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+D:\Application\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+D:\Application\ACR\UKSPARROW\BAL\obj\Release\BAL.csproj.CopyComplete
+D:\Application\ACR\UKSPARROW\BAL\obj\Release\BAL.dll
+D:\Application\ACR\UKSPARROW\BAL\obj\Release\BAL.pdb
+D:\Application\Dashboard\BAL\bin\Release\BAL.dll
+D:\Application\Dashboard\BAL\bin\Release\BAL.pdb
+D:\Application\Dashboard\BAL\bin\Release\DAL.dll
+D:\Application\Dashboard\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Helpers.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Mvc.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Razor.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.dll
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.dll
+D:\Application\Dashboard\BAL\bin\Release\DAL.pdb
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Helpers.xml
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Mvc.xml
+D:\Application\Dashboard\BAL\bin\Release\System.Web.Razor.xml
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.xml
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Application\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.xml
+D:\Application\Dashboard\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+D:\Application\Dashboard\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+D:\Application\Dashboard\BAL\obj\Release\BAL.csproj.CopyComplete
+D:\Application\Dashboard\BAL\obj\Release\BAL.dll
+D:\Application\Dashboard\BAL\obj\Release\BAL.pdb
+D:\Application\Dashboard\BAL\bin\Release\BAL.dll.config
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\BAL.dll.config
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\BAL.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\BAL.pdb
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\DAL.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Helpers.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Mvc.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Razor.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.dll
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\DAL.pdb
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Helpers.xml
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Mvc.xml
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.Razor.xml
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.xml
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Anuj\App\Im\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.xml
+D:\Anuj\App\Im\Dashboard\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+D:\Anuj\App\Im\Dashboard\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+D:\Anuj\App\Im\Dashboard\BAL\obj\Release\BAL.csproj.CopyComplete
+D:\Anuj\App\Im\Dashboard\BAL\obj\Release\BAL.dll
+D:\Anuj\App\Im\Dashboard\BAL\obj\Release\BAL.pdb
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\BAL.dll.config
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\BAL.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\BAL.pdb
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\DAL.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Helpers.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Mvc.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Razor.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\DAL.pdb
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Helpers.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Mvc.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.Razor.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.Deployment.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\bin\Release\System.Web.WebPages.Razor.xml
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\obj\Release\BAL.csproj.AssemblyReference.cache
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\obj\Release\BAL.csproj.CopyComplete
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\obj\Release\BAL.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\BAL\obj\Release\BAL.pdb

@@ -1,0 +1,29 @@
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\bin\Release\DAL.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\bin\Release\DAL.pdb
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\obj\Release\DAL.dll
+C:\Users\Admin\Desktop\ACR\UKSPARROW\DAL\obj\Release\DAL.pdb
+D:\ACR\UKSPARROW\DAL\bin\Release\DAL.dll
+D:\ACR\UKSPARROW\DAL\bin\Release\DAL.pdb
+D:\ACR\UKSPARROW\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+D:\ACR\UKSPARROW\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\ACR\UKSPARROW\DAL\obj\Release\DAL.dll
+D:\ACR\UKSPARROW\DAL\obj\Release\DAL.pdb
+D:\Application\Dashboard\DAL\bin\Release\DAL.dll
+D:\Application\Dashboard\DAL\bin\Release\DAL.pdb
+D:\Application\Dashboard\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+D:\Application\Dashboard\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\Application\Dashboard\DAL\obj\Release\DAL.dll
+D:\Application\Dashboard\DAL\obj\Release\DAL.pdb
+D:\Anuj\App\Im\Dashboard\DAL\bin\Release\DAL.dll
+D:\Anuj\App\Im\Dashboard\DAL\bin\Release\DAL.pdb
+D:\Anuj\App\Im\Dashboard\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\Anuj\App\Im\Dashboard\DAL\obj\Release\DAL.dll
+D:\Anuj\App\Im\Dashboard\DAL\obj\Release\DAL.pdb
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\bin\Release\DAL.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\bin\Release\DAL.pdb
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\obj\Release\DAL.dll
+C:\1 My Data\SPORT\Dashboard\Dashboard\DAL\obj\Release\DAL.pdb
